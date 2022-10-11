@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fki!%%5f@k^(jfy(3z0f_fkky!oaixfy6ohfr&c-ksh4=da13h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['164.92.168.194','localhost']
+ALLOWED_HOSTS = ['164.92.168.194', 'localhost',
+                 'pimpstaging.com', 'backend.pimpstaging.com', '127.0.0.1']
 
 
 # Application definition
@@ -82,7 +83,7 @@ WSGI_APPLICATION = 'desafio_tecnico_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR,'word_db.sqlite3')
+        'NAME': os.path.join(BASE_DIR, 'word_db.sqlite3')
     }
 }
 
@@ -121,8 +122,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
