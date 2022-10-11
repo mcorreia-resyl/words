@@ -6,7 +6,7 @@ const search = ref("");
 
 const onInput = debounce(() => {
   {
-    fetch(`backend.pimpstaging.com/api?q=` + search.value)
+    fetch(`backend./api?q=` + search.value)
       .then((response) => response.json())
       .then((data) => (results.value = data));
   }
