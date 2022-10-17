@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'autocompletion_app.apps.AutocompletionAppConfig',
-    'frontend.apps.FrontendConfig',
+    # 'frontend.apps.FrontendConfig',
     'rest_framework',
     'corsheaders',
 ]

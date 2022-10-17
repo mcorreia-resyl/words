@@ -22,6 +22,6 @@ from autocompletion_app.views import SearchView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api',SearchView.as_view()),
-    path('', include('frontend.urls'))
+    # path('', include('frontend.urls'))
 
 ]
